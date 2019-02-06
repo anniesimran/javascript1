@@ -1,0 +1,117 @@
+<html>
+<head>	
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Signup Form</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+body
+{
+	margin:0;
+	padding:0;
+	background:#efefef;
+	font-size:16px;
+	color:#777;
+	font-family:sans-serif;
+	font-weight:300;
+	background-image:url("q.jpg");
+}
+#login-box
+{
+	position:relative;
+	margin:5% auto;
+	height:400px;
+	width:600px;
+	background:#fff;
+	box-shadow:0 2px 4p rgba(0, 0, 0, 0.6);
+}
+.center-box
+{
+	position:absolute;
+	top:0;
+	left:0;
+	box-sizing:border-box;
+	padding:40px;
+	width:300px;
+	height:400px;
+}
+h1
+{
+	margin:0 0 20px 0;
+	font-weight:300;
+	font-size:28px;
+}
+input [type="text"],
+input[type="password"]
+{
+	display:block;
+	box-sizing:border-box;
+	margin-bottom:20px;
+	padding:4px;
+	width:220px;
+	height:32px;
+	border:none;
+	outline:none;
+	border-bottom:1px solid #aaa;
+	font-family:sans-serif;
+	font-weight:400;
+	font-size:15px;
+	transition:0.2 ease;
+}
+input[type="submit"]
+{
+	margin-bottom:28px;
+	width:120px;
+	height:32px;
+	background:#144336;
+	border:none;
+	border-radius:2px;
+	color:#fff;
+	font-family:sans-serif;
+	font-weight:500;
+	text-transform:uppercase;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus
+{
+	background:#FF572;
+}
+body {
+  background-image: url("one.png");
+  background-repeat: no-repeat;
+  background-size:1500px;
+}
+</style>
+</head>
+<body>
+<div id="login-box">
+<div class="center-box">
+
+<h1> SIGNUP FORM </h1>
+<form action="SIGNUP FORM" method="post">
+
+<div ><label><input type="text" name="username" placeholder="Username" required></div ></label>
+<div ><label><input type="text" name="email" placeholder="Email" pattern="[^ @]*@[^ @]*" required></div ></label>
+<div ><label><input type="text" name="contact number" placeholder=" Contact Number" required></div ></label>
+<div ><label><input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="password"></div ></label>
+<div ><label><input type="password" name="password2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder=" Confirm password"></div ></label>
+<div ><label><input type="submit" name="signup-button" value="Sign Up" style="width: 50%;" required></div ></label>
+</form>
+</div>
+</div>
+<div id="message">
+	<style>
+	h5,h3
+	{
+		color:#2f3640;
+	}
+</style>
+  <h3>Password must contain the following:</h3>
+  <h5>
+  <p id="letter" class="invalid" font-color:red>A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p></h5>
+</div>
+</body>
+</html>
